@@ -198,7 +198,6 @@ def calculate_log_likelihood(
         i2 = char_to_index[char2]
 
         bigram_prob = bigram_probabilities[i1,i2]
-        #print(bigram_prob)
         log_likelihood += torch.log(bigram_prob)
 
 
